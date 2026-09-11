@@ -1,0 +1,38 @@
+namespace Heranca
+
+{
+
+    internal class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            Funcionario Fu = new Funcionario("João Ricardo");
+
+            Funcionario Ge = new Gerente("Patricia", 0);
+
+            Funcionario De = new Desenvolvedor("Cesar", 0);
+
+
+
+            Fu.Salario = 3500;
+
+            Ge.Salario = 50000;
+
+            De.Salario = 5500;
+
+
+            Console.WriteLine(Fu.CalcularBonusAnual());
+
+            Console.WriteLine(Ge.CalcularBonusAnual());
+
+            Console.WriteLine(De.CalcularBonusAnual());
+
+        }
+
+    }
+
+}
