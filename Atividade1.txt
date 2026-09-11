@@ -1,0 +1,28 @@
+namespace Heranca
+{
+    internal class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            Cachorro meuCachorro = new Cachorro("Amora", "Vira-Lata");
+
+            Gato meuGato = new Gato("Nina", "Vira-Lata");
+
+
+            meuCachorro.Comer();
+
+            meuCachorro.Latir();
+
+            meuGato.Comer();
+
+            meuGato.Miar();
+
+        }
+
+    }
+
+}
