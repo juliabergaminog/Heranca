@@ -1,0 +1,35 @@
+namespace Heranca
+{
+    internal class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+             Guerreiro Jorge = new Guerreiro("Jorge", 50, 15, 10);
+            Mago Davy = new Mago("Davy Jones", 60, 19);
+            int turno = 1;
+
+            while(Davy.EstaVivo() && Jorge.EstaVivo())
+            {
+                Console.WriteLine($"Turno: {turno}");
+
+                Jorge.Atacar(Davy);
+                if (Davy.EstaVivo())
+                {
+                    Davy.Atacar(Jorge);
+                }
+                Console.WriteLine($"Vida do Jorge {Jorge.PontosDeVida}");
+                Console.WriteLine($"Vida do Davy {Davy.PontosDeVida}");
+                turno++;
+            }
+            if (Davy.EstaVivo()) { Console.WriteLine("O vencedor foi Davy, O mago"); }
+            else { Console.WriteLine("O vencedor foi Jorge, O guerreiro"); }
+
+        
+        }
+
+    }
+
+}

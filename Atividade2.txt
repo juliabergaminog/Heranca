@@ -10,7 +10,7 @@ namespace Heranca
 
         {
 
-            Funcionario Fu = new Funcionario("João Ricardo");
+            Funcionario Fu = new Funcionario("Julia");
 
             Funcionario Ge = new Gerente("Patricia", 0);
 

@@ -1,0 +1,23 @@
+namespace Heranca
+{
+    internal class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+            Retangulo Re = new Retangulo();
+            Circulo Ci = new Circulo();
+
+            Re.altura = 10;
+            Re.largura = 20;
+            Console.WriteLine($" a área do retangulo é {Re.CalcularArea()}");
+            Ci.raio = 5;
+            Console.WriteLine($" a área do circulo é {Ci.CalcularArea():F2}");
+        
+        }
+
+    }
+
+}
